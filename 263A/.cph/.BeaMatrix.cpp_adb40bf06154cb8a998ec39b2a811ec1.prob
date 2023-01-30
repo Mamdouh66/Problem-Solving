@@ -1,0 +1,1 @@
+{"name":"Local: BeaMatrix","url":"c:\\Users\\zuchv\\OneDrive\\سطح المكتب\\myCpc\\263A\\BeaMatrix.cpp","tests":[{"id":1671869650498,"input":"0 0 0 0 0\n0 0 0 0 1\n0 0 0 0 0\n0 0 0 0 0\n0 0 0 0 0","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\zuchv\\OneDrive\\سطح المكتب\\myCpc\\263A\\BeaMatrix.cpp","group":"local","local":true}

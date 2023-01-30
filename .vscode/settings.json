@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "xiosbase": "cpp",
+        "ios": "cpp",
+        "complex": "cpp",
+        "cstdlib": "cpp",
+        "valarray": "cpp",
+        "cmath": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
