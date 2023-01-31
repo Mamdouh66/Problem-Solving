@@ -1,33 +1,34 @@
-#include <bits/stdc++.h> 
+#include<bits/stdc++.h> 
+#include <stack>
 #define endl "\n" 
 #define mamdouh cin.tie(0); cout.tie(0); ios_base::sync_with_stdio(0); 
 using namespace std; 
 typedef long long ll;
 
-int main(){
+
+
+int main()
+{
     mamdouh
-    ll n,m; cin >> n;
-    vector <ll> arr[n];
-    ll MAX = 0;
-    for(int i = 0; i < n; i++){  // no. of companies
-        cin >> m;
-        for(int j = 0; j < m; j++){ // m-ith company size
-            ll x; cin >> x;
-            arr[i].push_back(x);
-            MAX = max(MAX, x);
-        }
-    }
-    for(int i = 0; i < n; i++){
-        sort(arr[i].begin(), arr[i].end(), greater<int>());
-    }
-    ll sum = 0;
-    for(int i = 0; i < n; i++){
-        if(arr[i].front() == MAX){
+    stack<ll>s;
+    ll n; cin >> n;
+    while(n--){
+        int x; cin >> x;
+        if (x==1){
+            int y; cin >> y;
+            s.push(y);
+        } else if(x==2){
+            if(!s.empty()){
+                s.pop();
+            }
             continue;
         } else{
-            sum += (MAX-arr[i].front()) * arr[i].size();
+            if(s.empty()){
+                cout << "Empty!" << endl;
+            }else{
+                cout << s.top() << endl;
+            }
         }
     }
-    cout << sum;
-    return 0;
+  return 0;
 }
